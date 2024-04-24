@@ -7,7 +7,7 @@ this [download](https://github.com/Naruru-Addon/chair/releases)
 # How to use
 First, import the add-on and apply it to the world.
 
-__At this time, turn on ``Beta API`` and ``Features of Holiday Creator`` from the world settings.__
+__At this time, turn on ``Beta API`` and ``Holiday Creator Features`` from the world settings.__
 
 # Right can click on these blocks and sit
 
