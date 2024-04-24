@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "This is a resource pack for the chair addon.\nProduction: Naruru\nYouTube: なるる-Naruru",
+        "name": "Chair_RP ver1.0.0",
+        "uuid": "34133ac6-21db-4f68-85f9-4d0a960c398d",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 20, 80]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "resources",
+            "uuid": "6155890c-3dca-4a7c-9fb5-7fe3da50a739",
+            "version": [1, 0, 0]
+        }
+    ]
+}
