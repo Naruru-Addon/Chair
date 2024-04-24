@@ -22,7 +22,7 @@ __インポートができたら、``ベータAPI``と``ホリデークリエイ
 ![img](https://github.com/Naruru-Addon/assets/blob/main/chair/slabs.png)
 
 # その場に座るには
-**"sit"コマンドを使用することで、その場に座ることができます**
+**"sit"** コマンドを使用することで、その場に座ることができます
 ![img](https://github.com/Naruru-Addon/assets/blob/main/chair/sit_command.png)
 
 # コマンド
