@@ -6,7 +6,7 @@ import { playerChairData, selectBlocks } from "./config";
 system.run(() => {
     const players = world.getAllPlayers();
     const dimensionIds = ["overworld", "nether", "the_end"];
-    
+
     for (const dimensionId of dimensionIds) {
         const dimension = world.getDimension(dimensionId);
         const entities = dimension.getEntities({ type: "chair:chair" });
@@ -23,19 +23,14 @@ system.run(() => {
 
 world.afterEvents.playerSpawn.subscribe(ev => {
     const { initialSpawn, player } = ev;
-    const playerId = player.id;
 
     if (initialSpawn) {
-        util.removePlayerChairData(player);
-        util.removeSitData(player);
-        chair.removeChair(player);
         util.setPlayerChairData(player, playerChairData);
     }
 })
 
 world.beforeEvents.playerLeave.subscribe(ev => {
     const { player } = ev;
-    const playerId = player.id;
 
     util.removePlayerChairData(player);
     util.removeSitData(player);
@@ -54,7 +49,7 @@ world.beforeEvents.chatSend.subscribe(ev => {
 
     if (!playerChairData.sit && message === "sit") {
         ev.cancel = true;
-        
+
         system.run(() => {
             const dimensionId = player.dimension.id;
             const { x, y, z } = player.location;
@@ -103,10 +98,10 @@ system.runInterval(() => {
     const players = world.getAllPlayers();
 
     for (const player of players) {
-        const playerChairData = util.getPlayerChairData(player);
+        try {
+            const playerChairData = util.getPlayerChairData(player);
 
-        if (playerChairData.sit) {
-            try {
+            if (playerChairData.sit) {
                 const dimensionId = player.dimension.id;
                 const playerChairData = util.getPlayerChairData(player);
                 const checkBlock = world.getDimension(dimensionId).getBlock(playerChairData.chair);
@@ -114,20 +109,20 @@ system.runInterval(() => {
                 const location = playerChairData.chair;
                 const rotation = player.getRotation();
                 const dimension = world.getDimension(dimensionId);
-    
+
                 entity.teleport(location, { dimension: dimension });
                 entity.setRotation(rotation);
-    
+
                 if (
                     !player.stopRide &&
                     (!player.hasComponent("minecraft:riding") ||
-                    checkBlock.isAir)
+                        checkBlock.isAir)
                 ) {
                     player.stopRide = true;
                     chair.stopRide(player);
                     continue;
                 }
-            } catch {};
-        }
+            }
+        } catch {};
     }
 });
