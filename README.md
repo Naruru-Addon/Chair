@@ -1,6 +1,6 @@
 # chair addon
 
-![ダウンロード](https://img.shields.io/github/downloads/Naruru-Addon/chair/total) ![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Naruru-Addon/chair/latest/total?color=green) ![GitHub Release](https://img.shields.io/github/v/release/Naruru-Addon/chair)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Naruru-Addon/chair/total) ![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Naruru-Addon/chair/latest/total?color=green) ![GitHub Release](https://img.shields.io/github/v/release/Naruru-Addon/chair)
  
 You can sit on the stairs and slabs or the spot.
 
