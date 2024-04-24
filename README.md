@@ -24,4 +24,5 @@ __At this time, turn on ``Beta API`` from the world settings.__
 # command
 | command  | description |
 | ------------- | ------------- |
-| sit  | sit on the spot  |
+| sit  | sit on the spot |
+| coff  | force stand up |
