@@ -1,6 +1,6 @@
 # chair addon
 
-You can sit on the stairs and half-block or the spot.
+You can sit on the stairs and slabs or the spot.
 
 this [download](https://github.com/Naruru-Addon/chair/releases)
 
@@ -14,7 +14,7 @@ __At this time, turn on ``Beta API`` and ``Features of Holiday Creator`` from th
 **stairs**
 ![img](https://github.com/Naruru-Addon/assets/blob/main/chair/stairs.png)
 
-**half-block**
+**slabs**
 ![img](https://github.com/Naruru-Addon/assets/blob/main/chair/slabs.png)
 
 # Can sit on the spot
