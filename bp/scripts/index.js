@@ -25,6 +25,7 @@ world.afterEvents.playerSpawn.subscribe(ev => {
     const { initialSpawn, player } = ev;
 
     if (initialSpawn) {
+        chair.stopRide(player);
         util.setPlayerChairData(player, playerChairData);
     }
 })
@@ -34,7 +35,6 @@ world.beforeEvents.playerLeave.subscribe(ev => {
 
     util.removePlayerChairData(player);
     util.removeSitData(player);
-    chair.removeChair(player);
 });
 
 world.beforeEvents.chatSend.subscribe(ev => {
@@ -43,7 +43,6 @@ world.beforeEvents.chatSend.subscribe(ev => {
 
     if (playerChairData.sit && message === "coff") {
         ev.cancel = true;
-        chair.removeChair(player);
         chair.stopRide(player);
     }
 
