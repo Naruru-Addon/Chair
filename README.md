@@ -5,6 +5,7 @@
 You can sit on the stairs and slabs or the spot.
 
 this [download](https://github.com/Naruru-Addon/chair/releases)
+
 [Crafters colony](https://minecraft-mcworld.com/39215/)
 
 # How to use
