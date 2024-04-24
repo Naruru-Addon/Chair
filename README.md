@@ -8,6 +8,9 @@
 
 クラフターズコロニーは[コチラ](https://minecraft-mcworld.com/39215/)
 
+# 質問
+[ディスコードサーバー](https://discord.com/invite/hAEJXUJY9q)で受け付けています
+
 # 使い方
 まずはアドオンをワールドにインポートしてください。
 
