@@ -1,10 +1,10 @@
 {
     "format_version": 2,
     "header": {
-        "description": "You can sit on the stairs or on the spot.\nProduction: Naruru\nYouTube: なるる-Naruru",
-        "name": "Chair_BP ver1.0.0",
+        "description": "階段やハーフブロックその場で座ることができます\n製作:なるる\nYouTube:なるる-Naruru",
+        "name": "イスアドオン ver1.4.0",
         "uuid": "b8102f99-74af-46a3-b63e-b388502ffe75",
-        "version": [1, 0, 0],
+        "version": [1, 4, 0],
         "min_engine_version": [1, 20, 80]
     },
     "modules": [
@@ -13,14 +13,14 @@
             "type": "script",
             "language": "javascript",
             "uuid": "4677ab90-0ff7-44ca-82e9-710e3a44f454",
-            "version": [1, 0, 0],
+            "version": [1, 4, 0],
             "entry": "scripts/index.js"
         }
     ],
     "dependencies": [
         {
             "uuid": "34133ac6-21db-4f68-85f9-4d0a960c398d",
-            "version": [1, 0, 0]
+            "version": [1, 4, 0]
         },
         {
             "module_name": "@minecraft/server",
