@@ -25,7 +25,7 @@ __インポートができたら、``ベータAPI``と``ホリデークリエイ
 **"sit"** コマンドを使用することで、その場に座ることができます
 ![img](https://github.com/Naruru-Addon/assets/blob/main/chair/sit_command.png)
 
-# コマンド
+# コマンド一覧
 | コマンド  | 説明 |
 | ------------- | ------------- |
 | sit  | その場に座ります |
