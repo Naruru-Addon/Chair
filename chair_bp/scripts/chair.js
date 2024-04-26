@@ -7,21 +7,19 @@ import { playerChairData as initializePlayerChairData, sitData } from "./config"
  * @param {Player} player 
  */
 export function removeChair(player) {
-    system.run(() => {
-        const playerChairData = util.getPlayerChairData(player);
-        const playerId = player.id;
-        const dimensionIds = ["overworld", "nether", "the_end"];
-    
-        if (!playerChairData.sit) return;
-        for (const dimensionId of dimensionIds) {
-            const dimension = world.getDimension(dimensionId);
-            const entities = dimension.getEntities({ type: "chair:chair", name: `chair_${playerId}` });
-    
-            for (const entity of entities) {
-                entity.remove();
-            }
+    const playerChairData = util.getPlayerChairData(player);
+    const playerId = player.id;
+    const dimensionIds = ["overworld", "nether", "the_end"];
+
+    if (!playerChairData.sit) return;
+    for (const dimensionId of dimensionIds) {
+        const dimension = world.getDimension(dimensionId);
+        const entities = dimension.getEntities({ type: "chair:chair", name: `chair_${playerId}` });
+
+        for (const entity of entities) {
+            entity.remove();
         }
-    });
+    }
 }
 
 /**

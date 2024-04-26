@@ -114,8 +114,10 @@ system.runInterval(() => {
 
                 if (
                     !player.stopRide &&
-                    (!player.hasComponent("minecraft:riding") ||
-                        checkBlock.isAir)
+                    (
+                        !player.hasComponent("minecraft:riding") ||
+                        checkBlock.isAir
+                    )
                 ) {
                     player.stopRide = true;
                     chair.stopRide(player);
