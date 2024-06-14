@@ -77,7 +77,7 @@ world.beforeEvents.playerInteractWithBlock.subscribe(ev => {
     const lastName = block.typeId.split("_")[block.typeId.split("_").length - 1];
     const { x, y, z } = player.location;
     const playerChairData = util.getPlayerChairData(player);
-    const Item = player.getComponent("inventory").container.getItem(player.selectedSlot);
+    const Item = player.getComponent("inventory").container.getItem(player.selectedSlotIndex);
 
     if (player.interact) return;
     if (block.permutation.getAllStates()["minecraft:vertical_helf"] === "top") return;
