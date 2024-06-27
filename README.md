@@ -6,12 +6,12 @@
 
 アドオンのダウンロードは[コチラ](https://github.com/Naruru-Addon/chair/releases)
 
-クラフターズコロニーは[コチラ](https://minecraft-mcworld.com/39215/)
-
 # 質問
-[ディスコードサーバー](https://discord.com/invite/hAEJXUJY9q)で受け付けています
+[YouTubeのコメント欄](https://www.youtube.com/watch?v=cGPpEfAxdDg)で受け付けています
 
 # 使い方
+動画での説明は[コチラ](https://www.youtube.com/watch?v=cGPpEfAxdDg)
+
 まずはアドオンをワールドにインポートしてください。
 
 __インポートができたら、``ベータAPI``と``ホリデークリエイターの特徴``をワールド設定からオンにしてください__
