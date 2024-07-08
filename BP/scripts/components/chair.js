@@ -75,13 +75,17 @@ export function teleport(player) {
         const dimensionId = data.dimensionId;
         const location = data.location;
         const dimension = world.getDimension(dimensionId);
-        const chair = get(player);
+        const chairs = get(player);
 
-        chair.teleport(location, { dimension: dimension });
-        chair.setRotation(rotation);
-
-        if (!player.hasComponent("riding")) {
-            kill(chair);
+        if (chairs) {
+            for (const chair of chairs) {
+                chair.teleport(location, { dimension: dimension });
+                chair.setRotation(rotation);
+        
+                if (!player.hasComponent("riding")) {
+                    kill(chair);
+                }
+            }
         }
     }
 }
@@ -89,6 +93,7 @@ export function teleport(player) {
 /**
  * プレイヤーのイスを取得します
  * @param {Player} player 
+ * @returns {Entity[]}
  */
 export function get(player) {
     const playerId = player.id;
@@ -98,9 +103,9 @@ export function get(player) {
         const dimensionId = data.dimensionId;
         const chairName = data.entityName;
         const dimension = world.getDimension(dimensionId);
-        const chair = dimension.getEntities({ name: chairName })[0];
+        const chairs = dimension.getEntities({ name: chairName });
 
-        return chair;
+        return chairs;
     }
 
     return null;
