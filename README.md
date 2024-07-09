@@ -1,6 +1,6 @@
 # Chair Addon
 
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Naruru-Addon/chair/total) ![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Naruru-Addon/chair/latest/total?color=green) ![GitHub Release](https://img.shields.io/github/v/release/Naruru-Addon/chair)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Naruru-Addon/Chair/total) ![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Naruru-Addon/Chair/latest/total?color=green) ![GitHub Release](https://img.shields.io/github/v/release/Naruru-Addon/Chair)
  
 階段やハーフブロック、その場に座ることができます
 
