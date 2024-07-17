@@ -75,16 +75,26 @@ export function teleport(player) {
         const dimensionId = data.dimensionId;
         const location = data.location;
         const dimension = world.getDimension(dimensionId);
-        const chairs = get(player);
+        const chair = get(player);
 
-        if (chairs) {
-            for (const chair of chairs) {
-                chair.teleport(location, { dimension: dimension });
-                chair.setRotation(rotation);
-        
-                if (!player.hasComponent("riding")) {
-                    kill(chair);
-                }
+        if (chair) {
+            const chairLocation = {
+                x: Math.floor(data.location.x),
+                y: Math.floor(data.location.y),
+                z: Math.floor(data.location.z)
+            };
+
+            chair.teleport(location, { dimension: dimension });
+            chair.setRotation(rotation);
+
+            if (dimension.getBlock(chairLocation).isAir) {
+                kill(chair);
+                return;
+            }
+
+            if (!player.hasComponent("riding")) {
+                kill(chair);
+                return;
             }
         }
     }
@@ -93,7 +103,7 @@ export function teleport(player) {
 /**
  * プレイヤーのイスを取得します
  * @param {Player} player 
- * @returns {Entity[]}
+ * @returns {Entity}
  */
 export function get(player) {
     const playerId = player.id;
@@ -103,9 +113,9 @@ export function get(player) {
         const dimensionId = data.dimensionId;
         const chairName = data.entityName;
         const dimension = world.getDimension(dimensionId);
-        const chairs = dimension.getEntities({ name: chairName });
+        const chair = dimension.getEntities({ name: chairName })[0];
 
-        return chairs;
+        return chair;
     }
 
     return null;
@@ -133,18 +143,20 @@ export function getPlayer(id) {
  * @param {Entity} chair 
  */
 export function kill(chair) {
-    for (const key of chairMap.keys()) {
-        const data = chairMap.get(key);
-        const entityName = data.entityName;
+    try {
+        for (const key of chairMap.keys()) {
+            const data = chairMap.get(key);
+            const entityName = data.entityName;
 
-        if (chair.nameTag === entityName) {
-            const player = getPlayer(key);
+            if (chair.nameTag === entityName) {
+                const player = getPlayer(key);
 
-            chairMap.delete(key);
-            chair.remove();
-            player.sit = false;
+                chairMap.delete(key);
+                chair.remove();
+                player.sit = false;
+            }
         }
-    }
+    } catch { }
 }
 
 /**

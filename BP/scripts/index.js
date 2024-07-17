@@ -31,7 +31,6 @@ world.beforeEvents.chatSend.subscribe(ev => {
 
         player.sit = true;
         Chair.sit(player, location);
-
     } else if (message === "coff") {
         ev.cancel = true;
 
