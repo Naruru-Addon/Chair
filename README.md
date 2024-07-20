@@ -28,6 +28,8 @@ __インポートができたら、``ベータAPI``と``ホリデークリエイ
 **"sit"** コマンドを使用することで、その場に座ることができます
 ![img](https://github.com/Naruru-Addon/Chair/blob/main/assets/sit_command.png)
 
+![img](https://github.com/Naruru-Addon/Chair/blob/main/assets/sit.png)
+
 # コマンド一覧
 | コマンド  | 説明 |
 | ------------- | ------------- |
