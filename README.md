@@ -19,14 +19,14 @@ __インポートができたら、``ベータAPI``と``ホリデークリエイ
 # 右クリックで座れるブロック
 
 **階段**
-![img](https://github.com/Naruru-Addon/assets/blob/main/chair/stairs.png)
+![img](https://github.com/Naruru-Addon/Chair/blob/main/assets/stairs.png)
 
 **ハーフブロック**
-![img](https://github.com/Naruru-Addon/assets/blob/main/chair/slabs.png)
+![img](https://github.com/Naruru-Addon/Chair/blob/main/assets/slabs.png)
 
 # その場に座るには
 **"sit"** コマンドを使用することで、その場に座ることができます
-![img](https://github.com/Naruru-Addon/assets/blob/main/chair/sit_command.png)
+![img](https://github.com/Naruru-Addon/Chair/blob/main/assets/sit_command.png)
 
 # コマンド一覧
 | コマンド  | 説明 |
