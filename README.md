@@ -7,7 +7,7 @@
 アドオンのダウンロードは[コチラ](https://github.com/Naruru-Addon/chair/releases)
 
 # 質問
-[YouTubeのコメント欄](https://www.youtube.com/watch?v=cGPpEfAxdDg)で受け付けています
+[YouTubeのコメント欄](https://www.youtube.com/watch?v=cGPpEfAxdDg) または [クラフターズコロニーのコメント欄](https://minecraft-mcworld.com/86891/)で受け付けています
 
 # 使い方
 動画での説明は[コチラ](https://www.youtube.com/watch?v=cGPpEfAxdDg)
